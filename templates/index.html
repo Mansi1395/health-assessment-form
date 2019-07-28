@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <title>Healthform</title>
+        <link rel='stylesheet' href='styles.css'/>
+        <link rel="stylesheet" type="text/css" a href="teststyles.css" />
+    </head>
+    <body>
+    <form name="myform" method="post">
+    <form method = "POST" action="{{url_for('addrec')}}">
+        <div class ="form-group">
+         <div class="input-group">
+          <div class="media">
+       <p><h1>Health Assessment Form<pr></p>
+       <p><h2>General Information<pr></p>
+       <p><h4>School Name: <input type="text" name="schoolname" /><h4><br><br></p>
+
+
+       <p><h4>Standard & Division:<h4></p>
+       <select name ="Standard">
+            <option value="IA">IA</option>
+            <option value="IB">IB</option>
+            <option value="IIA">IIA</option>
+            <option value="IIB">IIB</option>
+            <option value="IIIA">IIIA</option>
+            <option value="IIIB">IIIB</option>
+            <option value="IVA">IVA</option>
+            <option value="IVB">IVB</option>
+            <option value="VA">VA</option>
+            <option value="VB">VB</option>
+        </select><br><br>
+    
+
+
+       <p><h4>Name Of Student: <input type="text" name="Name" /><h4><br><br></p>
+
+       <p><h4>Roll Number Unique Code: <input type="text" name="Numbers" /><h4><br><br></p>
+
+       <p><h4>Centre Code: <input type="text" name="code" /><h4><br><br></p>
+
+       <p><h4>Gender: <br>
+       <input type="radio" name="gender" value="male" />Male<br>
+       <input type="radio" name="gender" value="female" />Female<h4><br><br></p>
+
+       <p><h4>Date Of Birth: <input type="text" name="DOB" /><h4><br><br></p>
+
+       <p><h4>Age: <input type="text" name="age" /><h4><br><br></p>
+
+       <p><h2>Immunisation History<pr></p>
+
+       <p><h4>Has your child taken the following vaccinations?<h4></p>
+       <p><h4><input type="checkbox" name="immu" value="DPT" />DPT<h4><br>
+          <h4><input type="checkbox" name="immu" value="Polio" />Polio<h4><br>
+          <h4><input type="checkbox" name="immu" value="BCG" />BCG<h4><br>
+          <h4><input type="checkbox" name="immu" value="Varicella" />Varicella<h4><br>
+          <h4><input type="checkbox" name="immu" value="Infleuza" />Influenza<h4><br>
+          <h4><input type="checkbox" name="immu" value="HiB" />HiB<h4><br>
+          <h4><input type="checkbox" name="immu" value="MMR" />MMR<h4><br>
+          <h4><input type="checkbox" name="immu" value="HepB" />HepB<h4><br>
+          <h4><input type="checkbox" name="immu" value="Typhoid" />Typhoid<h4><br>
+          <h4><input type="checkbox" name="immu" value="PCV" />PCV<h4><br>
+          <h4><input type="checkbox" name="immu" value="HPV" />HPV<h4><br>
+          <h4><input type="checkbox" name="immu" value="HepA" />HepA<h4><br><br></p>
+
+       <p><h4>Any recent illness?<h4></p>
+       <p><h4><input type="checkbox" name="disease" value="Cold&Cough" />Cold&Cough<h4><br>
+          <h4><input type="checkbox" name="disease" value="Jaundice" />Jaundice<h4><br>
+          <h4><input type="checkbox" name="disease" value="Malaria" />Malaria<h4><br>
+          <h4><input type="checkbox" name="disease" value="Diarrhoea" />Diarrhoea<h4><br>
+          <h4><input type="checkbox" name="disease" value="Vomiting" />Vomiting<h4><br>
+          <h4><input type="checkbox" name="disease" value="Chest-infection" />Chest-infection<h4><br>
+          <h4><input type="checkbox" name="disease" value="Swine-flu" />Swine-flu<h4><br>
+          <h4><input type="checkbox" name="disease" value="Chikungunya" />Chikungunya<h4><br>
+          <h4><input type="checkbox" name="disease" value="Typhoid" />Typhoid<h4><br>
+          <h4><input type="checkbox" name="disease" value="Dengue" />Dengue<h4><br>
+          <h4><input type="checkbox" name="disease" value="None" />None<h4><br><br></p>
+
+
+        <p><h4>How often does your child fall sick?<h4></p>
+        <select name ="Sick">
+         <p><h4><option value="Very Frequently">Very Frequently</option><h4>
+            <h4><option value="Frequently">Frequently</option><h4>
+            <h4><option value="Rare">Rare</option><h4>
+            <h4><option value="Never">Never</option><h4></p>
+        </select><br><br>
+
+        <p><h2>Dietary Habits<pr></p>
+        <p><h4>Type Of Food: <h4></p>
+        <p><h4><select name ="Food"><h4>
+        <p><h4><option value="Vegetarian">Vegetarian</option><h4>
+            <h4><option value="Non-Vegetarian">Non-Vegetarian</option><h4>
+            <h4><option value="Eggetarian">Eggetarian</option><h4></p>
+        <h4></select><br><br><h4></p>
+       
+        <p><h4>Number of meals per day: <h4></p>
+        <p><h4><select name ="Meals"><h4>
+        <p><h4><option value="1">1</option><h4>
+             <h4><option value="2">2</option><h4>
+           <h4><option value="3">3</option><h4>
+           <h4><option value="4">4</option><h4>
+           <h4><option value="5">5</option><h4>
+           <h4><option value="6">6</option><h4>
+           <h4><option value="7">7</option><h4></p>
+        <h4></select><br><br><h4></p>
+
+        <p><h4>Frequency of intake of junk food per week: <h4></p>
+        <p><h4><select name ="Junk"><h4>
+        <p><h4><option value="1">1</option><h4>
+           <h4><option value="2">2</option><h4>
+           <h4><option value="3">3</option><h4>
+           <h4><option value="4">4</option><h4>
+           <h4><option value="5">5</option><h4>
+           <h4><option value="6">6</option><h4>
+           <h4><option value="7">7</option><h4>
+           <h4><option value="8">8</option><h4>
+           <h4><option value="9">9</option><h4>
+           <h4><option value="10">10</option><h4></p>
+        <h4></select><br><br><h4></p>
+
+        <p><h4>Daily Water Intake(Number Of Glasses): <h4></p>
+        <p><h4><select name ="Water"><h4>
+        <p><h4><option value="1">1</option><h4>
+           <h4><option value="2">2</option><h4>
+           <h4><option value="3">3</option><h4>
+           <h4><option value="4">4</option><h4>
+           <h4><option value="5">5</option><h4>
+           <h4><option value="6">6</option><h4>
+           <h4><option value="7">7</option><h4></p>
+        <h4></select><br><br><h4></p>
+
+
+        <p><h4>Morning Breakfast: <h4></p>
+        <p><h4><input type="checkbox" name="breakfast" value="Milk with sugar" />Milk with sugar<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Milk without sugar" />Milk without sugar<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Egg" />Egg<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Omlette" />Omlette<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Poha" />Poha<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Upma" />Upma<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Idli" />Idli<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Dosa" />Dosa<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Biscuits" />Biscuits<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Tea" />Tea<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Coffee" />Coffee<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Juice" />Juice<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Fruits" />Fruits<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Flavoured Nutritional Drink" />Flavoured Nutritional Drink<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Roti" />Roti<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Paratha" />Paratha<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Farsan" />Farsan<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Dhokla" />Dhokla<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Sambhar" />Sambhar<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Cheela" />Cheela<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Vegetable Sandwich" />Vegetable Sandwich<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Bread" />Bread<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Cheese" />Cheese<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Oats" />Oats<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Peanut butter" />Peanut butter<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Butter/Ghee" />Butter/Ghee<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Cereals" />Cereals<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Yoghurt" />Yoghurt<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Paneer" />Paneer<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Dry Fruits" />Dry Fruits<h4><br>
+           <h4><input type="checkbox" name="breakfast" value="Any other" />Any other<h4><br><br></p>
+
+         <p><h4>Lunch: <h4></p>
+        <p><h4><input type="checkbox" name="lunch" value="Rice" />Rice<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Roti" />Roti<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Puri" />Puri<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Paratha" />Paratha<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Vegetable Sabzi" />Vegetable sabzi<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Dal" />Dal<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Kadhi" />Kadhi<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Fish" />Fish<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Chicken" />Chicken<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Meat" />Meat<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Farsan" />Farsan<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Sweets" />Sweets<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Rajma" />Rajma<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Chana" />Chana<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Curd" />Curd<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Khichdi" />Khichdi<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Burger" />Burger<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Junk Food" />Junk Food<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Fruits" />Fruits<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Salad" />Salad<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Pulses" />Pulses<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Sprouts" />Sprouts<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Curry" />Curry<h4><br>
+           <h4><input type="checkbox" name="lunch" value="Any other" />Any other<h4><br><br></p>
+
+
+
+
+        <p><h4>Evening Snacks: <h4></p>
+        <p><h4><input type="checkbox" name="snacks" value="Milk with sugar" />Milk with sugar<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Milk without sugar" />Milk without sugar<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Egg" />Egg<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Omlette" />Omlette<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Poha" />Poha<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Upma" />Upma<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Idli" />Idli<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Dosa" />Dosa<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Biscuits" />Biscuits<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Tea" />Tea<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Coffee" />Coffee<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Juice" />Juice<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Fruits" />Fruits<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Flavoured Nutritional Drink" />Flavoured Nutritional Drink<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Roti" />Roti<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Paratha" />Paratha<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Farsan" />Farsan<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Junk Food" />Junk Food<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Wafers/Chips" />Wafers/Chips<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Bread/Pav" />Bread/Pav<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Fried Items" />Fried Items<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Instant Noodles" />Instant Noodles<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Pasta" />Pasta<h4><br>
+           <h4><input type="checkbox" name="snacks" value="Any other" />Any other<h4><br><br></p>
+
+
+        <p><h4>Dinner: <h4></p>
+        <p><h4><input type="checkbox" name="dinner" value="Rice" />Rice<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Roti" />Roti<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Puri" />Puri<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Paratha" />Paratha<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Vegetable Sabzi" />Vegetable sabzi<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Dal" />Dal<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Kadhi" />Kadhi<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Fish" />Fish<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Chicken" />Chicken<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Meat" />Meat<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Farsan" />Farsan<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Sweets" />Sweets<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Rajma" />Rajma<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Chana" />Chana<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Curd" />Curd<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Khichdi" />Khichdi<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Burger" />Burger<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Junk Food" />Junk Food<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Fruits" />Fruits<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Salad" />Salad<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Pulses" />Pulses<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Sprouts" />Sprouts<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Curry" />Curry<h4><br>
+           <h4><input type="checkbox" name="dinner" value="Any other" />Any other<h4><br><br></p>
+
+        <p><h2>Physical Examination<pr></p>
+        <p><h4>Height(in cms): <h4></p>
+        <p><h4><select name ="height"><h4>
+        <p><h4><option value="50">50</option><h4>
+           <h4><option value="51">51</option><h4>
+           <h4><option value="52">52</option><h4>
+           <h4><option value="53">53</option><h4>
+           <h4><option value="54">54</option><h4>
+           <h4><option value="55">55</option><h4>
+           <h4><option value="56">56</option><h4>
+           <h4><option value="57">57</option><h4>
+           <h4><option value="58">58</option><h4>
+           <h4><option value="59">59</option><h4>
+           <h4><option value="60">60</option><h4>
+           <h4><option value="61">61</option><h4>
+           <h4><option value="62">62</option><h4>
+           <h4><option value="63">63</option><h4>
+           <h4><option value="64">64</option><h4>
+           <h4><option value="65">65</option><h4>
+           <h4><option value="66">66</option><h4>
+           <h4><option value="67">67</option><h4>
+           <h4><option value="68">68</option><h4>
+           <h4><option value="69">69</option><h4>
+           <h4><option value="70">70</option><h4>
+           <h4><option value="71">71</option><h4>
+           <h4><option value="72">72</option><h4>
+           <h4><option value="73">73</option><h4>
+           <h4><option value="74">74</option><h4>
+           <h4><option value="75">75</option><h4>
+           <h4><option value="76">76</option><h4>
+           <h4><option value="77">77</option><h4>
+           <h4><option value="78">78</option><h4>
+           <h4><option value="79">79</option><h4>
+           <h4><option value="80">80</option><h4>
+           <h4><option value="81">81</option><h4>
+           <h4><option value="82">82</option><h4>
+           <h4><option value="83">83</option><h4>
+           <h4><option value="84">84</option><h4>
+           <h4><option value="85">85</option><h4>
+           <h4><option value="86">86</option><h4>
+           <h4><option value="87">87</option><h4>
+           <h4><option value="88">88</option><h4>
+           <h4><option value="89">89</option><h4>
+           <h4><option value="90">90</option><h4>
+           <h4><option value="91">91</option><h4>
+           <h4><option value="92">92</option><h4>
+           <h4><option value="93">93</option><h4>
+           <h4><option value="94">94</option><h4>
+           <h4><option value="95">95</option><h4>
+           <h4><option value="96">96</option><h4>
+           <h4><option value="97">97</option><h4>
+           <h4><option value="98">98</option><h4>
+           <h4><option value="99">99</option><h4>
+           <h4><option value="100">100</option><h4>
+           <h4><option value="101">101</option><h4>
+           <h4><option value="102">102</option><h4>
+           <h4><option value="103">103</option><h4>
+           <h4><option value="104">104</option><h4>
+           <h4><option value="105">105</option><h4>
+           <h4><option value="106">106</option><h4>
+           <h4><option value="107">107</option><h4>
+           <h4><option value="108">108</option><h4>
+           <h4><option value="109">109</option><h4>
+           <h4><option value="110">110</option><h4>
+           <h4><option value="111">111</option><h4>
+           <h4><option value="112">112</option><h4>
+           <h4><option value="113">113</option><h4>
+           <h4><option value="114">114</option><h4>
+           <h4><option value="115">115</option><h4>
+           <h4><option value="116">116</option><h4>
+           <h4><option value="117">117</option><h4>
+           <h4><option value="118">118</option><h4>
+           <h4><option value="119">119</option><h4>
+           <h4><option value="120">120</option><h4>
+           <h4><option value="121">121</option><h4>
+           <h4><option value="122">122</option><h4>
+           <h4><option value="123">123</option><h4>
+           <h4><option value="124">124</option><h4>
+           <h4><option value="125">125</option><h4>
+           <h4><option value="126">126</option><h4>
+           <h4><option value="127">127</option><h4>
+           <h4><option value="128">128</option><h4>
+           <h4><option value="129">129</option><h4>
+           <h4><option value="130">130</option><h4>
+           <h4><option value="131">131</option><h4>
+           <h4><option value="132">132</option><h4>
+           <h4><option value="133">133</option><h4>
+           <h4><option value="134">134</option><h4>
+           <h4><option value="135">135</option><h4>
+           <h4><option value="136">136</option><h4>
+           <h4><option value="137">137</option><h4>
+           <h4><option value="138">138</option><h4>
+           <h4><option value="139">139</option><h4>
+           <h4><option value="140">140</option><h4>
+           <h4><option value="141">141</option><h4>
+           <h4><option value="142">142</option><h4>
+           <h4><option value="143">143</option><h4>
+           <h4><option value="144">144</option><h4>
+           <h4><option value="145">145</option><h4>
+           <h4><option value="146">146</option><h4>
+           <h4><option value="147">147</option><h4>
+           <h4><option value="148">148</option><h4>
+           <h4><option value="149">149</option><h4>
+           <h4><option value="150">150</option><h4>
+           <h4><option value="151">151</option><h4>
+           <h4><option value="152">152</option><h4>
+           <h4><option value="153">153</option><h4>
+           <h4><option value="154">154</option><h4>
+           <h4><option value="155">155</option><h4></p>
+        <h4></select><br><br><h4></p>
+
+
+        
+             <p><h4>Weight(in kg): <h4></p>
+        <p><h4><select name ="magnitude"><h4>
+        <p><h4><option value="8">8</option><h4>
+           <h4><option value="9">9</option><h4>
+           <h4><option value="10">10</option><h4>
+           <h4><option value="11">11</option><h4>
+           <h4><option value="12">12</option><h4>
+           <h4><option value="13">13</option><h4>
+           <h4><option value="14">14</option><h4>
+           <h4><option value="15">15</option><h4>
+           <h4><option value="16">16</option><h4>
+           <h4><option value="17">17</option><h4>
+           <h4><option value="18">18</option><h4>
+           <h4><option value="19">19</option><h4>
+           <h4><option value="20">20</option><h4>
+           <h4><option value="21">21</option><h4>
+           <h4><option value="22">22</option><h4>
+           <h4><option value="23">23</option><h4>
+           <h4><option value="24">24</option><h4>
+           <h4><option value="25">25</option><h4>
+           <h4><option value="26">26</option><h4>
+           <h4><option value="27">27</option><h4>
+           <h4><option value="28">28</option><h4>
+           <h4><option value="29">29</option><h4>
+           <h4><option value="30">30</option><h4>
+           <h4><option value="31">31</option><h4>
+           <h4><option value="32">32</option><h4>
+           <h4><option value="33">33</option><h4>
+           <h4><option value="34">34</option><h4>
+           <h4><option value="35">35</option><h4>
+           <h4><option value="36">36</option><h4>
+           <h4><option value="37">37</option><h4>
+           <h4><option value="38">38</option><h4>
+           <h4><option value="39">39</option><h4>
+           <h4><option value="40">40</option><h4>
+           <h4><option value="41">41</option><h4>
+           <h4><option value="42">42</option><h4>
+           <h4><option value="43">43</option><h4>
+           <h4><option value="44">44</option><h4>
+           <h4><option value="45">45</option><h4>
+           <h4><option value="46">46</option><h4>
+           <h4><option value="47">47</option><h4>
+           <h4><option value="48">48</option><h4>
+           <h4><option value="49">49</option><h4>
+           <h4><option value="50">50</option><h4>
+           <h4><option value="51">51</option><h4>
+           <h4><option value="52">52</option><h4>
+           <h4><option value="53">53</option><h4>
+           <h4><option value="54">54</option><h4>
+           <h4><option value="55">55</option><h4>
+           <h4><option value="56">56</option><h4>
+           <h4><option value="57">57</option><h4>
+           <h4><option value="58">58</option><h4>
+           <h4><option value="59">59</option><h4>
+           <h4><option value="60">60</option><h4></p>
+        <h4></select><br><br><h4></p>
+
+
+        <p><h4>Pulse rate(beats/min): <h4></p>
+        <p><h4><select name ="Rate"><h4>
+        <p><h4><option value="58">58</option><h4>
+           <h4><option value="59">59</option><h4>
+           <h4><option value="60">60</option><h4>
+           <h4><option value="61">61</option><h4>
+           <h4><option value="62">62</option><h4>
+           <h4><option value="63">63</option><h4>
+           <h4><option value="64">64</option><h4>
+           <h4><option value="65">65</option><h4>
+           <h4><option value="66">66</option><h4>
+           <h4><option value="67">67</option><h4>
+           <h4><option value="68">68</option><h4>
+           <h4><option value="69">69</option><h4>
+           <h4><option value="70">70</option><h4>
+           <h4><option value="71">71</option><h4>
+           <h4><option value="72">72</option><h4>
+           <h4><option value="73">73</option><h4>
+           <h4><option value="74">74</option><h4>
+           <h4><option value="75">75</option><h4>
+           <h4><option value="76">76</option><h4>
+           <h4><option value="77">77</option><h4>
+           <h4><option value="78">78</option><h4>
+           <h4><option value="79">79</option><h4>
+           <h4><option value="80">80</option><h4>
+           <h4><option value="81">81</option><h4>
+           <h4><option value="82">82</option><h4>
+           <h4><option value="83">83</option><h4>
+           <h4><option value="84">84</option><h4>
+           <h4><option value="85">85</option><h4>
+           <h4><option value="86">86</option><h4>
+           <h4><option value="87">87</option><h4>
+           <h4><option value="88">88</option><h4>
+           <h4><option value="89">89</option><h4>
+           <h4><option value="90">90</option><h4>
+           <h4><option value="91">91</option><h4>
+           <h4><option value="92">92</option><h4>
+           <h4><option value="93">93</option><h4>
+           <h4><option value="94">94</option><h4>
+           <h4><option value="95">95</option><h4>
+           <h4><option value="96">96</option><h4>
+           <h4><option value="97">97</option><h4>
+           <h4><option value="98">98</option><h4>
+           <h4><option value="99">99</option><h4>
+           <h4><option value="100">100</option><h4>
+           <h4><option value="101">101</option><h4>
+           <h4><option value="102">102</option><h4>
+           <h4><option value="103">103</option><h4>
+           <h4><option value="104">104</option><h4>
+           <h4><option value="105">105</option><h4>
+           <h4><option value="106">106</option><h4>
+           <h4><option value="107">107</option><h4>
+           <h4><option value="108">108</option><h4>
+           <h4><option value="109">109</option><h4>
+           <h4><option value="110">110</option><h4>
+           <h4><option value="111">111</option><h4>
+           <h4><option value="112">112</option><h4>
+           <h4><option value="113">113</option><h4>
+           <h4><option value="114">114</option><h4>
+           <h4><option value="115">115</option><h4>
+           <h4><option value="116">116</option><h4>
+           <h4><option value="117">117</option><h4>
+           <h4><option value="118">118</option><h4>
+           <h4><option value="119">119</option><h4>
+           <h4><option value="120">120</option><h4>
+           <h4><option value="121">121</option><h4>
+           <h4><option value="122">122</option><h4>
+           <h4><option value="123">123</option><h4>
+           <h4><option value="124">124</option><h4>
+           <h4><option value="125">125</option><h4>
+           <h4><option value="126">126</option><h4>
+           <h4><option value="127">127</option><h4>
+           <h4><option value="128">128</option><h4>
+           <h4><option value="129">129</option><h4>
+           <h4><option value="130">130</option><h4></p>
+        <h4></select><br><br><h4></p>
+
+
+        <p><h4>Respiratory rate(breath/min): <h4></p>
+        <p><h4><select name ="Rates"><h4>
+        <p><h4><option value="12">12</option><h4>
+           <h4><option value="13">13</option><h4>
+           <h4><option value="14">14</option><h4>
+           <h4><option value="15">15</option><h4>
+           <h4><option value="16">16</option><h4>
+           <h4><option value="17">17</option><h4>
+           <h4><option value="18">18</option><h4>
+           <h4><option value="19">19</option><h4>
+           <h4><option value="20">20</option><h4>
+           <h4><option value="21">21</option><h4>
+           <h4><option value="22">22</option><h4>
+           <h4><option value="23">23</option><h4>
+           <h4><option value="24">24</option><h4>
+           <h4><option value="25">25</option><h4>
+           <h4><option value="26">26</option><h4>
+           <h4><option value="27">27</option><h4>
+           <h4><option value="28">28</option><h4>
+           <h4><option value="29">29</option><h4>
+           <h4><option value="30">30</option><h4>
+           <h4><option value="31">31</option><h4>
+           <h4><option value="32">32</option><h4>
+           <h4><option value="33">33</option><h4>
+           <h4><option value="34">34</option><h4>
+           <h4><option value="35">35</option><h4></p>
+        <h4></select><br><br><h4></p>
+
+        <p><h2>Systemic Examination<pr></p>
+        
+        <p><h4>Choose from the following alternatives: <h4></p>
+        <p><div class='row'>
+             <div class="col-lg-4 col-lg-offset-4">
+           <h4>Skin<h4><br>
+           <h4>Head<h4><br>
+           <h4>Ear<h4><br>
+           <h4>Nose<h4><br>
+           <h4>Hearing Test<h4><br>
+           <h4>Lymph Nodes<h4><br>
+           <h4>CVS<h4><br>
+           <h4>CNS<h4><br>
+           <h4>GIT<h4><br>
+           <h4>RS<h4><br>
+           <h4>General Signs<h4><br>
+            </div><br><br></p>
+
+         <p><div class="col-lg-4 col-lg-offset-4">
+           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
+           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br> 
+           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
+           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
+           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br> 
+           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
+           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
+           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
+           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
+           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
+           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
+            </div><br><br></p>
+        
+
+
+        <p><div class="col-lg-4 col-lg-offset-4">
+           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
+           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br> 
+           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
+           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
+           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br> 
+           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
+           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
+           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
+           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
+           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
+           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
+            </div><pr></p>
+
+
+
+        <div class="container">
+        <p><div class="text-left" href="#"></p>
+        <p>&nbsp;&nbsp;<h4>Tonsillitis (Tonsil Inflammation):<h4><br>
+        <p>&nbsp;&nbsp;<input type="radio" name="tonsil" value="Present" />Present<br></p>
+        <p>&nbsp;&nbsp;<input type="radio" name="tonsil" value="Absent" />Absent<h4><br><br></p>
+        </div>
+
+        
+        <p><h4>Allergy:<h4><br>
+        <input type="radio" name="allergy" value="Yes" />Present<br>
+        <input type="radio" name="allergy" value="No" />Absent<h4><br><br></p>
+
+    
+        <p><h4>Time Spent On Screen(in hours):<h4><br>
+        <input type="radio" name="times" value="1" />1<br>
+        <input type="radio" name="times" value="2" />2<h4><br><br></p>
+
+        <p><h4>Physiological issues: <h4></p>
+        <p><div class='row'>
+             <div class="col-lg-4 col-lg-offset-4">
+           <h4>Any breathing difficulty<h4><br>
+           <h4>Any speech difficulty<h4><br>
+           <h4>Bleeding from nose<h4><br>
+           <h4>Bleeding from cut more than expected<h4><br>
+            </div><br><br></p>
+
+         <p><div class="col-lg-4 col-lg-offset-4">
+           <h4><input type="radio" name="normal" value="Yes" />Yes<h4><br>
+           <h4><input type="radio" name="normal" value="Yes" />Yes<h4><br> 
+           <h4><input type="radio" name="normal" value="Yes" />Yes<h4><br>
+           <h4><input type="radio" name="normal" value="Yes" />Yes<h4><br>
+            </div><br><br></p>
+        
+
+
+        <p><div class="col-lg-4 col-lg-offset-4">
+           <h4><input type="radio" name="abnormal" value="No" />No<h4><br>
+           <h4><input type="radio" name="abnormal" value="No" />No<h4><br> 
+           <h4><input type="radio" name="abnormal" value="No" />No<h4><br>
+           <h4><input type="radio" name="abnormal" value="No" />No<h4><br>
+            </div><pr></p>
+
+
+        <div class="container">
+        <p><div class="text-left" href="#"></p>
+        <p><h4>Paediatrician's Remark: <h4></p>
+        <p><h4><input type="checkbox" name="paediatric" value="ENT Issue" />ENT Issue<h4><br>
+           <h4><input type="checkbox" name="paediatric" value="Chest Issue" />Chest Issue<h4><br>
+           <h4><input type="checkbox" name="paediatric" value="Skin Issue" />Skin Issue<h4><br>
+           <h4><input type="checkbox" name="paediatric" value="Vaccination required" />Vaccination required<h4><br>
+           <h4><input type="checkbox" name="paediatric" value="Digestive Issue" />Digestive Issue<h4><br>
+           <h4><input type="checkbox" name="paediatric" value="Normal" />Normal<h4><br>
+           <h4><input type="checkbox" name="paediatric" value="Other" />Other<h4><br><br></p>
+
+        <p><h4>Requires Further Paediatric Consulting:<h4><br>
+        <input type="radio" name="answer" value="Yes" />Yes<br>
+        <input type="radio" name="answer" value="No" />No<h4><br><br></p>
+
+        <p><h2>Dietary Assessment<pr></p>
+
+         <p><h4>Choose from the following: <h4></p>
+        <p><div class='row'>
+             <div class="col-lg-4 col-lg-offset-4">
+           <h4>Carbohydrate intake<h4><br>
+           <h4>Mineral intake<h4><br>
+           <h4>Fat intake<h4><br>
+           <h4>Protein intake<h4><br>
+           <h4>Vitamin intake<h4><br>
+            </div><br><br></p>
+
+         <p><div class="col-lg-4 col-lg-offset-4">
+           <h4><input type="radio" name="norm" value="Adequate" />Adequate<h4><br>
+           <h4><input type="radio" name="norm" value="Adequate" />Adequate<h4><br> 
+           <h4><input type="radio" name="norm" value="Adequate" />Adequate<h4><br>
+           <h4><input type="radio" name="norm" value="Adequate" />Adequate<h4><br>
+           <h4><input type="radio" name="norm" value="Adequate" />Adequate<h4><br>
+            </div><br><br></p>
+        
+
+
+        <p><div class="col-lg-4 col-lg-offset-4">
+           <h4><input type="radio" name="abn" value="Inadequate" />Inadequate<h4><br>
+           <h4><input type="radio" name="abn" value="Inadequate" />Inadequate<h4><br>
+           <h4><input type="radio" name="abn" value="Inadequate" />Inadequate<h4><br>
+           <h4><input type="radio" name="abn" value="Inadequate" />Inadequate<h4><br>
+           <h4><input type="radio" name="abn" value="Inadequate" />Inadequate<h4><br>
+            </div><pr></p>
+
+
+        <div class="container">
+        <p><div class="text-left" href="#"></p>
+
+          <p><h4>Choose from the following: <h4></p>
+        <p><div class='row'>
+             <div class="col-lg-4 col-lg-offset-4">
+           <h4>Is the student undernourished?<h4><br>
+           <h4>Is the student overfed, but undernourished?<h4><br>
+           <h4>Is student obese?<h4><br>
+           <h4>Is fibre content in meal adequate?<h4><br>
+           <h4>Any other nutritional disorder?<h4><br>
+            </div><br><br></p>
+
+         <p><div class="col-lg-4 col-lg-offset-4">
+           <h4><input type="radio" name="nor" value="Yes" />Yes<h4><br>
+           <h4><input type="radio" name="nor" value="Yes" />Yes<h4><br> 
+           <h4><input type="radio" name="nor" value="Yes" />Yes<h4><br>
+           <h4><input type="radio" name="nor" value="Yes" />Yes<h4><br>
+           <h4><input type="radio" name="nor" value="Yes" />Yes<h4><br>
+            </div><br><br></p>
+        
+
+
+        <p><div class="col-lg-4 col-lg-offset-4">
+           <h4><input type="radio" name="af" value="No" />No<h4><br>
+           <h4><input type="radio" name="af" value="No" />No<h4><br>
+           <h4><input type="radio" name="af" value="No" />No<h4><br>
+           <h4><input type="radio" name="af" value="No" />No<h4><br>
+           <h4><input type="radio" name="af" value="No" />No<h4><br>
+            </div><pr></p>
+
+
+        <div class="container">
+        <p><div class="text-left" href="#"></p>
+        <p><h4>Requires Further Diet Consulting:<h4><br>
+        <input type="radio" name="answers" value="Yes" />Yes<br>
+        <input type="radio" name="answers" value="No" />No<br>
+        <input type="radio" name="answers" value="Maybe" />Maybe<h4><br><br></p>
+
+         <p><h4>Diet Remarks: <h4></p>
+        <p><h4><input type="checkbox" name="diet" value="Good" />Good<h4><br>
+           <h4><input type="checkbox" name="diet" value="Needs Balanced Diet" />Needs Balanced Diet<h4><br>
+           <h4><input type="checkbox" name="diet" value="Needs Physical activity" />Needs Physical activity<h4><br>
+           <h4><input type="checkbox" name="diet" value="Needs Nutritional supplements" />Needs Nutritional supplements<h4><br>
+           <h4><input type="checkbox" name="diet" value="Good eating habits" />Good eating habits<h4><br>
+           <h4><input type="checkbox" name="diet" value="Other" />Other<h4><br><br></p>
+
+        <p><h2>DENTAL HEALTH<pr></p>
+           <p><h4>Oral habits: <h4></p>
+        <p><div class='row'>
+             <div class="col-lg-4 col-lg-offset-4">
+           <h4>Brushing twice<h4><br>
+           <h4>Use of mouthwash<h4><br>
+           <h4>Daily tongue cleansing<h4><br>
+           <h4>Brushing with toothpaste<h4><br>
+            </div><br><br></p>
+
+         <p><div class="col-lg-4 col-lg-offset-4">
+           <h4><input type="radio" name="nom" value="Yes" />Yes<h4><br>
+           <h4><input type="radio" name="nom" value="Yes" />Yes<h4><br> 
+           <h4><input type="radio" name="nom" value="Yes" />Yes<h4><br>
+           <h4><input type="radio" name="nom" value="Yes" />Yes<h4><br>
+            </div><br><br></p>
+        
+
+
+        <p><div class="col-lg-4 col-lg-offset-4">
+           <h4><input type="radio" name="an" value="No" />No<h4><br>
+           <h4><input type="radio" name="an" value="No" />No<h4><br>
+           <h4><input type="radio" name="an" value="No" />No<h4><br>
+           <h4><input type="radio" name="an" value="No" />No<h4><br>
+            </div><pr></p>
+
+
+        <div class="container">
+        <p><div class="text-left" href="#"></p>
+         <p><h4>Decayed teeth: <h4></p>
+        <p><h4><input type="checkbox" name="teeth" value="None" />None<h4><br>
+           <h4><input type="checkbox" name="teeth" value="11" />11<h4><br>
+           <h4><input type="checkbox" name="teeth" value="12" />12<h4><br>
+           <h4><input type="checkbox" name="teeth" value="13" />13<h4><br>
+           <h4><input type="checkbox" name="teeth" value="14" />14<h4><br>
+           <h4><input type="checkbox" name="teeth" value="15" />15<h4><br>
+           <h4><input type="checkbox" name="teeth" value="16" />16<h4><br>
+           <h4><input type="checkbox" name="teeth" value="17" />17<h4><br>
+           <h4><input type="checkbox" name="teeth" value="21" />21<h4><br>
+           <h4><input type="checkbox" name="teeth" value="22" />22<h4><br>
+           <h4><input type="checkbox" name="teeth" value="23" />23<h4><br>
+           <h4><input type="checkbox" name="teeth" value="24" />24<h4><br>
+           <h4><input type="checkbox" name="teeth" value="25" />25<h4><br>
+           <h4><input type="checkbox" name="teeth" value="26" />26<h4><br>
+           <h4><input type="checkbox" name="teeth" value="27" />27<h4><br>
+           <h4><input type="checkbox" name="teeth" value="31" />31<h4><br>
+           <h4><input type="checkbox" name="teeth" value="32" />32<h4><br>
+           <h4><input type="checkbox" name="teeth" value="33" />33<h4><br>
+           <h4><input type="checkbox" name="teeth" value="34" />34<h4><br>
+           <h4><input type="checkbox" name="teeth" value="35" />35<h4><br>
+           <h4><input type="checkbox" name="teeth" value="36" />36<h4><br>
+           <h4><input type="checkbox" name="teeth" value="37" />37<h4><br>
+           <h4><input type="checkbox" name="teeth" value="41" />41<h4><br>
+           <h4><input type="checkbox" name="teeth" value="42" />42<h4><br>
+           <h4><input type="checkbox" name="teeth" value="43" />43<h4><br>
+           <h4><input type="checkbox" name="teeth" value="44" />44<h4><br>
+           <h4><input type="checkbox" name="teeth" value="45" />45<h4><br>
+           <h4><input type="checkbox" name="teeth" value="46" />46<h4><br>
+           <h4><input type="checkbox" name="teeth" value="47" />47<h4><br>
+           <h4><input type="checkbox" name="teeth" value="51" />51<h4><br>
+           <h4><input type="checkbox" name="teeth" value="52" />52<h4><br>
+           <h4><input type="checkbox" name="teeth" value="53" />53<h4><br>
+           <h4><input type="checkbox" name="teeth" value="54" />54<h4><br>
+           <h4><input type="checkbox" name="teeth" value="55" />55<h4><br>
+           <h4><input type="checkbox" name="teeth" value="61" />61<h4><br>
+           <h4><input type="checkbox" name="teeth" value="62" />62<h4><br>
+           <h4><input type="checkbox" name="teeth" value="63" />63<h4><br>
+           <h4><input type="checkbox" name="teeth" value="64" />64<h4><br>
+           <h4><input type="checkbox" name="teeth" value="65" />65<h4><br>
+           <h4><input type="checkbox" name="teeth" value="71" />71<h4><br>
+           <h4><input type="checkbox" name="teeth" value="72" />72<h4><br>
+           <h4><input type="checkbox" name="teeth" value="73" />73<h4><br>
+           <h4><input type="checkbox" name="teeth" value="74" />74<h4><br>
+           <h4><input type="checkbox" name="teeth" value="75" />75<h4><br>
+           <h4><input type="checkbox" name="teeth" value="81" />81<h4><br>
+           <h4><input type="checkbox" name="teeth" value="82" />82<h4><br>
+           <h4><input type="checkbox" name="teeth" value="83" />83<h4><br>
+           <h4><input type="checkbox" name="teeth" value="84" />84<h4><br>
+           <h4><input type="checkbox" name="teeth" value="85" />85<h4><br><br></p>
+
+      
+         <p><h4>Filled teeth/Prosthesis: <h4></p>
+        <p><h4><input type="checkbox" name="fill" value="None" />None<h4><br>
+           <h4><input type="checkbox" name="fill" value="51" />51<h4><br>
+           <h4><input type="checkbox" name="fill" value="52" />52<h4><br>
+           <h4><input type="checkbox" name="fill" value="53" />53<h4><br>
+           <h4><input type="checkbox" name="fill" value="54" />54<h4><br>
+           <h4><input type="checkbox" name="fill" value="55" />55<h4><br>
+           <h4><input type="checkbox" name="fill" value="61" />61<h4><br>
+           <h4><input type="checkbox" name="fill" value="62" />62<h4><br>
+           <h4><input type="checkbox" name="fill" value="63" />63<h4><br>
+           <h4><input type="checkbox" name="fill" value="64" />64<h4><br>
+           <h4><input type="checkbox" name="fill" value="65" />65<h4><br>
+           <h4><input type="checkbox" name="fill" value="71" />71<h4><br>
+           <h4><input type="checkbox" name="fill" value="72" />72<h4><br>
+           <h4><input type="checkbox" name="fill" value="73" />73<h4><br>
+           <h4><input type="checkbox" name="fill" value="74" />74<h4><br>
+           <h4><input type="checkbox" name="fill" value="75" />75<h4><br>
+           <h4><input type="checkbox" name="fill" value="81" />81<h4><br>
+           <h4><input type="checkbox" name="fill" value="82" />82<h4><br>
+           <h4><input type="checkbox" name="fill" value="83" />83<h4><br>
+           <h4><input type="checkbox" name="fill" value="84" />84<h4><br>
+           <h4><input type="checkbox" name="fill" value="85" />85<h4><br><br></p>
+
+          <p><h4>Missing teeth: <h4></p>
+        <p><h4><input type="checkbox" name="filled" value="None" />None<h4><br>
+           <h4><input type="checkbox" name="filled" value="51" />51<h4><br>
+           <h4><input type="checkbox" name="filled" value="52" />52<h4><br>
+           <h4><input type="checkbox" name="filled" value="53" />53<h4><br>
+           <h4><input type="checkbox" name="filled" value="54" />54<h4><br>
+           <h4><input type="checkbox" name="filled" value="55" />55<h4><br>
+           <h4><input type="checkbox" name="filled" value="61" />61<h4><br>
+           <h4><input type="checkbox" name="filled" value="62" />62<h4><br>
+           <h4><input type="checkbox" name="filled" value="63" />63<h4><br>
+           <h4><input type="checkbox" name="filled" value="64" />64<h4><br>
+           <h4><input type="checkbox" name="filled" value="65" />65<h4><br>
+           <h4><input type="checkbox" name="filled" value="71" />71<h4><br>
+           <h4><input type="checkbox" name="filled" value="72" />72<h4><br>
+           <h4><input type="checkbox" name="filled" value="73" />73<h4><br>
+           <h4><input type="checkbox" name="filled" value="74" />74<h4><br>
+           <h4><input type="checkbox" name="filled" value="75" />75<h4><br>
+           <h4><input type="checkbox" name="filled" value="81" />81<h4><br>
+           <h4><input type="checkbox" name="filled" value="82" />82<h4><br>
+           <h4><input type="checkbox" name="filled" value="83" />83<h4><br>
+           <h4><input type="checkbox" name="filled" value="84" />84<h4><br>
+           <h4><input type="checkbox" name="filled" value="85" />85<h4><br><br></p>
+
+           <p><h4>Choose whether yes or no: <h4></p>
+        <p><div class='row'>
+             <div class="col-lg-4 col-lg-offset-4">
+           <h4>Fluorosis<h4><br>
+           <h4>Gingivitis<h4><br>
+           <h4>Malocclusion<h4><br>
+           <h4>Calculus<h4><br>
+           <h4>Stains<h4><br>
+           <h4>Coated Tongue<h4><br>
+           <h4>Bleeding gums<h4><br>
+           <h4>Swelling(Intra-oral/Extra-oral)<h4><br>
+           <h4>Tooth pain/Sensitivity<h4><br>
+           <h4>Temperomandibular Joint<h4><br>
+            </div><br><br></p>
+
+         <p><div class="col-lg-4 col-lg-offset-4">
+           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br>
+           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br> 
+           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br>
+           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br>
+           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br>
+           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br> 
+           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br>
+           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br>
+           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br> 
+           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br>
+            </div><br><br></p>
+        
+
+
+        <p><div class="col-lg-4 col-lg-offset-4">
+           <h4><input type="radio" name="den" value="No" />No<h4><br>
+           <h4><input type="radio" name="den" value="No" />No<h4><br>
+           <h4><input type="radio" name="den" value="No" />No<h4><br>
+           <h4><input type="radio" name="den" value="No" />No<h4><br>
+           <h4><input type="radio" name="den" value="No" />No<h4><br>
+           <h4><input type="radio" name="den" value="No" />No<h4><br>
+           <h4><input type="radio" name="den" value="No" />No<h4><br>
+           <h4><input type="radio" name="den" value="No" />No<h4><br>
+           <h4><input type="radio" name="den" value="No" />No<h4><br>
+           <h4><input type="radio" name="den" value="No" />No<h4><br>
+            </div><pr></p>
+
+
+        <div class="container">
+        <p><div class="text-left" href="#"></p>
+        <p><h4>Requires Further Pedodontist Consulting Consulting:<h4><br>
+        <input type="radio" name="ans" value="Yes" />Yes<br>
+        <input type="radio" name="ans" value="No" />No<br><br></p>
+  
+        <p><h4>Dental remarks: <h4></p>
+        <p><h4><input type="checkbox" name="dental" value="Root Canal" />Root Canal<h4><br>
+           <h4><input type="checkbox" name="dental" value="Fillings" />Fillings<h4><br>
+           <h4><input type="checkbox" name="dental" value="Cosmetic" />Cosmetic<h4><br>
+           <h4><input type="checkbox" name="dental" value="Extraction" />Extraction<h4><br>
+           <h4><input type="checkbox" name="dental" value="Scaling" />Scaling<h4><br>
+           <h4><input type="checkbox" name="dental" value="Good Oral Hygiene" />Good Oral Hygiene<h4><br>
+           <h4><input type="checkbox" name="dental" value="Avoid chocolates" />Avoid chocolates<h4><br>
+           <h4><input type="checkbox" name="dental" value="Correct brushing technique" />Correct brushing technique<h4><br>
+           <h4><input type="checkbox" name="dental" value="Brush twice" />Brush twice<h4><br>   
+           <h4><input type="checkbox" name="dental" value="Any other" />Any other<h4><br><br></p>
+
+        <p><h2>EYE ASSESSMENT<pr></p>
+        <p><h4>Eye Issues: <h4></p>
+        <p><div class='row'>
+            <div class="col-md-6">
+        <p><h4> Wears glasses:<h4><br>                                   
+        <input type="radio" name="prob" value="Yes" />Yes<br> 
+        <input type="radio" name="prob" value="No" />No<br><br></div></p>
+
+            <div class="col-md-6">
+        <p><h4> Water from eyes:<h4><br>                                   
+        <input type="radio" name="probs" value="Yes" />Yes<br> 
+        <input type="radio" name="probs" value="No" />No<br><br></div><pr></p>
+
+            <p><h4>&nbsp;&nbsp;Colour Vision: <h4></p>
+        <p><div class='row'>
+             <div class="col-lg-4 col-lg-offset-4">
+           <h4>&nbsp;&nbsp;Left colour perception<h4><br>
+           <h4>&nbsp;&nbsp;Right colour perception<h4><br>
+            </div><br><br></p>
+
+         <p><div class="col-lg-4 col-lg-offset-4">
+           <h4><input type="radio" name="Ye" value="Yes" />Yes<h4><br>
+           <h4><input type="radio" name="Ye" value="Yes" />Yes<h4><br> 
+            </div><br><br></p>
+        
+
+
+        <p><div class="col-lg-4 col-lg-offset-4">
+           <h4><input type="radio" name="nots" value="No" />No<h4><br>
+           <h4><input type="radio" name="nots" value="No" />No<h4><br>
+            </div><pr></p>
+        
+        <div class="container">
+        <p><div class="text-left" href="#"></p>
+         
+         <div class="container">
+        <p><div class="text-left" href="#"></p>
+
+        
+        <p><h4>Left Eye Vision Acuity: <h4></p>
+        <p><h4><input type="checkbox" name="eye" value="6" />6<h4><br>
+           <h4><input type="checkbox" name="eye" value="9" />9<h4><br>
+           <h4><input type="checkbox" name="eye" value="12" />12<h4><br>
+           <h4><input type="checkbox" name="eye" value="18" />18<h4><br>
+           <h4><input type="checkbox" name="eye" value="24" />24<h4><br>
+           <h4><input type="checkbox" name="eye" value="36" />36<h4><br><br></p>
+
+        <p><h4>Right Eye Vision Acuity: <h4></p>
+        <p><h4><input type="checkbox" name="eyes" value="6" />6<h4><br>
+           <h4><input type="checkbox" name="eyes" value="9" />9<h4><br>
+           <h4><input type="checkbox" name="eyes" value="12" />12<h4><br>
+           <h4><input type="checkbox" name="eyes" value="18" />18<h4><br>
+           <h4><input type="checkbox" name="eyes" value="24" />24<h4><br>
+           <h4><input type="checkbox" name="eyes" value="36" />36<h4><br><br></p>
+
+        <p><h4>Opthal remarks: <h4></p>
+        <p><h4><input type="checkbox" name="remark" value="Needs detailed eye test" />Need detailed eye test<h4><br>
+           <h4><input type="checkbox" name="remark" value="Change in optic number or power" />Change in optic number or power<h4><br>
+           <h4><input type="checkbox" name="remark" value="Good eye health" />Good eye health<h4><br>
+           <h4><input type="checkbox" name="remark" value="Avoid gadget" />Avoid gadget<h4><br>
+           <h4><input type="checkbox" name="remark" value="Stop eye rubbing" />Stop eye rubbing<h4><br>
+           <h4><input type="checkbox" name="remark" value="Wear glasses" />Wear glasses<h4><br>
+           <h4><input type="checkbox" name="remark" value="Proper eye wash" />Proper eye wash<h4><br><br></p>
+        
+        <p><h4>Requires Further Opthalmologist Consulting:<h4><br>
+        <input type="radio" name="opthal" value="Yes" />Yes<br>
+        <input type="radio" name="opthal" value="No" />No<br><br></p>
+
+        <p><h2>PSYCHOLOGICAL ASSESSMENT<pr></p>
+
+        
+        <p><h4>Eye contact:<h4><br>
+        <input type="radio" name="psychological" value="Maintains" />Maintains<br>
+        <input type="radio" name="psychological" value="Doesn't maintain" />Doesn't maintain<br><br></p>
+
+        <p><h4>Anxiety levels:<h4><br>
+        <input type="radio" name="psych" value="High" />High<br>
+        <input type="radio" name="psych" value="Low" />Low<br><br></p>
+
+        <p><h4>Gets frequently angry:<h4><br>
+        <input type="radio" name="psy" value="Yes" />Yes<br>
+        <input type="radio" name="psy" value="No" />No<br><br></p>
+
+        <p><h4>Hyperactive:<h4><br>
+        <input type="radio" name="ps" value="Yes" />Yes<br>
+        <input type="radio" name="ps" value="No" />No<br><br></p>
+
+        <p><h4>Communication type:<h4><br>
+        <input type="radio" name="nature" value="Extrovert" />Extrovert<br>
+        <input type="radio" name="nature" value="Introvert" />Introvert<br><br></p>
+
+        <p><h4>Psychological Assessment: <h4></p>
+    
+        <p><div class='row'>
+             <div class="col-lg-3 col-lg-offset-3">
+           <h4>General Intelligence<h4><br>
+           <h4>Non - Verbal Intelligence<h4><br>
+           <h4>Attention<h4><br>
+           <h4>Memory & Learning<h4><br>
+           <h4>Motor Functioning<h4><br>
+            </div><br><br></p>
+
+         <p><div class="col-lg-3 col-lg-offset-3">
+           <h4><input type="radio" name="motor" value="Average" />Average<h4><br>
+           <h4><input type="radio" name="motor" value="Average" />Average<h4><br> 
+           <h4><input type="radio" name="motor" value="Average" />Average<h4><br>
+           <h4><input type="radio" name="motor" value="Average" />Average<h4><br>
+           <h4><input type="radio" name="motor" value="Average" />Average<h4><br>
+            </div><br><br></p>
+        
+
+
+        <p><div class="col-lg-3 col-lg-offset-3">
+           <h4><input type="radio" name="learning" value="Below Average" />Below Average<h4><br>
+           <h4><input type="radio" name="learning" value="Below Average" />Below Average<h4><br>
+           <h4><input type="radio" name="learning" value="Below Average" />Below Average<h4><br>
+           <h4><input type="radio" name="learning" value="Below Average" />Below Average<h4><br>
+           <h4><input type="radio" name="learning" value="Below Average" />Below Average<h4><br>
+            </div><pr></p>
+
+         <p><div class="col-lg-3 col-lg-offset-3">
+           <h4><input type="radio" name="learn" value="Above Average" />Above Average<h4><br>
+           <h4><input type="radio" name="learn" value="Above Average" />Above Average<h4><br>
+           <h4><input type="radio" name="learn" value="Above Average" />Above Average<h4><br>
+           <h4><input type="radio" name="learn" value="Above Average" />Above Average<h4><br>
+           <h4><input type="radio" name="learn" value="Above Average" />Above Average<h4><br>
+            </div><pr></p>
+
+
+        <div class="container">
+        <p><div class="text-left" href="#"></p>
+
+
+
+            
+         </div>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /><hr></p>
+    </form> 
+    </body>
+</html>
+

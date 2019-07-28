@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+   <body>
+     <table border = 1>
+     	<thead>
+     		<td>School Name</td>
+            <td>Standard & Division</td>
+            <td>Name Of Student</td>
+            <td>Roll Number</td>
+            <td>Centre code</td>
+            <td>Gender</td>
+            <td>Date of birth</td>
+            <td>Age</td>
+            <td>Vaccination</td>
+            <td>Recent Illness</td>
+            <td>Frequency of falling sick</td>
+            <td>Type of food</td>
+            <td>Number of meals per day</td>
+            <td>Frequency of intake of junk food per week</td>
+            <td>Daily Water Intake(Number Of Glasses)</td>
+            <td>Morning Breakfast</td>
+            <td>Lunch</td>
+            <td>Evening Snacks</td>
+            <td>Dinner</td>
+            <td>Height</td>
+            <td>Weight</td>
+            <td>Pulse Rate</td>
+            <td>Respiratory Rate</td>
+            <td>Systemic examination</td>
+            <td>Systemic examination</td>
+            <td>Tonsillitis</td>
+            <td>Physiological Issue</td>
+            <td>Physiological Issue</td>
+            <td>Paediatrician's remark</td>
+            <td>Paediatrician's consulting</td>
+            <td>Dietary assessment</td>
+            <td>Dietary assessment</td>
+            <td>Nutritional remark</td>
+            <td>Nutritional remark</td>
+            <td>Requires further diet consulting</td>
+            <td>Diet remarks</td>
+            <td>Oral habits</td>
+            <td>Oral habits</td>
+            <td>Decayed teeth</td>
+            <td>Filled teeth</td>
+            <td>Missing teeth</td>
+            <td>Dental Issue</td>
+            <td>Dental Issue</td>
+            <td>Pedodontist consulting</td>
+            <td>Dental remark</td>
+            <td>Wears glasses</td>
+            <td>Water from eyes</td>
+            <td>Left colour perception</td>
+            <td>Right colour perception</td>
+            <td>Left eye vision acuity</td>
+            <td>Right eye vision acuity</td>
+            <td>Opthal remarks</td>
+            <td>Opthalmologist consulting</td>
+            <td>Eye contact</td>
+            <td>Anxiety levels</td>
+            <td>Gets frequently angry</td>
+            <td>Hyperactive</td>
+            <td>Communication type</td>
+            <td>Psychological assessment</td>
+            <td>Psychological assessment</td>
+            <td>Psychological assessment</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["School Name"]}}</td>
+               <td>{{row["Standard & Division"]}}</td>
+               <td> {{ row["Name Of Student"]}}</td>
+               <td>{{row["Roll Number"]}}</td>	
+               <td>{{row["Centre code"]}}</td>
+               <td>{{row["Gender"]}}</td>
+               <td> {{ row["Date of birth"]}}</td>
+               <td>{{row["Age"]}}</td>
+               <td>{{row["Vaccination"]}}</td>
+               <td>{{row["Recent Illness"]}}</td>
+               <td> {{ row["Frequency of falling sick"]}}</td>
+               <td>{{row["Type of food"]}}</td>	
+               <td>{{row["Number of meals per day"]}}</td>
+               <td>{{row["Frequency of intake of junk food per week"]}}</td>
+               <td> {{ row["Daily Water Intake(Number Of Glasses)"]}}</td>
+               <td>{{row["Morning Breakfast"]}}</td>
+               <td>{{row["Lunch"]}}</td>
+               <td>{{row["Evening Snacks"]}}</td>
+               <td> {{ row["Dinner"]}}</td>
+               <td>{{row["Height"]}}</td>	
+               <td>{{row["Weight"]}}</td>
+               <td>{{row["Pulse Rate"]}}</td>
+               <td> {{ row["Respiratory Rate"]}}</td>
+               <td>{{row["Systemic examination"]}}</td>
+               <td>{{row["Systemic examination"]}}</td>
+               <td>{{row["Tonsilittis"]}}</td>
+               <td> {{ row["Allergy"]}}</td>
+               <td>{{row["Time spent on screen"]}}</td>	
+               <td>{{row["Physiological Issue"]}}</td>
+               <td>{{row["Physiological Issue"]}}</td>
+               <td> {{ row["Paediatrician's remark"]}}</td>
+               <td>{{row["Paediatrician's consulting"]}}</td>
+               <td> {{ row["Dietary assessment"]}}</td>
+               <td>{{row["Dietary assessment"]}}</td>	
+               <td>{{row["Nutritional remark"]}}</td>
+               <td>{{row["Nutritional remark"]}}</td>
+               <td> {{ row["Requires further diet consulting"]}}</td>
+               <td>{{row["Diet remarks"]}}</td>
+               <td>{{row["Oral habits"]}}</td>
+               <td>{{row["Oral habits"]}}</td>
+               <td> {{ row["Decayed teeth"]}}</td>
+               <td>{{row["Filled teeth"]}}</td>	
+               <td>{{row["Missing teeth"]}}</td>
+               <td>{{row["Dental Issue"]}}</td>
+               <td> {{ row["Dental Issue"]}}</td>
+               <td>{{row["Pedodontist consulting"]}}</td>
+                <td> {{ row["Dental remark"]}}</td>
+               <td>{{row["Wears glasses"]}}</td>
+               <td>{{row["Water from eyes"]}}</td>
+               <td>{{row["Left colour perception"]}}</td>
+               <td> {{ row["Right colour perception"]}}</td>
+               <td>{{row["Left eye vision acuity"]}}</td>	
+               <td>{{row["Right eye vision acuity"]}}</td>
+               <td>{{row["Opthal remarks"]}}</td>
+               <td> {{ row["Opthalmologist consulting"]}}</td>
+               <td>{{row["Eye contact"]}}</td>	
+               <td> {{ row["Anxiety levels"]}}</td>
+               <td>{{row["Gets frequently angry"]}}</td>	
+               <td>{{row["Hyperactive"]}}</td>
+               <td>{{row["Communication type"]}}</td>
+               <td> {{ row["Opthalmologist consulting"]}}</td>
+               <td>{{row["Psychological assessment"]}}</td>				
+               <td>{{row["Psychological assessment"]}}</td>	
+               <td>{{row["Psychological assessment"]}}</td>									
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Go back to home page</a>
+   </body>
+</html>
+        
