@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+addrec	../main.py	/^def addrec():$/;"	kind:function	line:37
+app	../main.py	/^app = Flask(__name__)$/;"	kind:variable	line:6
+index	../main.py	/^def index():$/;"	kind:function	line:10
+list	../main.py	/^def list():$/;"	kind:function	line:120
+main.py	../main.py	1;"	kind:file	line:1
+new_student	../main.py	/^def new_student():$/;"	kind:function	line:32
+pygalexample	../main.py	/^def pygalexample():$/;"	kind:function	line:22
+reply	../main.py	/^def reply():$/;"	kind:function	line:15
