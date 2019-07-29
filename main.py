@@ -101,7 +101,7 @@ def addrec():
 		learning = request.form['learning']
 		learn = request.form['learn']
 
-		with sql.connect("database.db") as con:
+		with sql.connect("healthform.sql") as con:
 			cur = con.cursor()
 			cur.execute("INSERT INTO students(schoolname, Standard, Name, Numbers, code, gender, DOB, age, immu, disease, Sick, Food, Meals, Junk, Water, breakfast, lunch, snacks, dinner, height, magnitude, Rate, Rates, norma, abnorma, tonsil, allergy, normal, abnormal, paediatric, answer, norm, abn, nor, af, answers, diet, nom, an, teeth, fill, filled, dent, den, ans, dental, prob, probs, Ye, nots, eye, eyes, remark, opthal, psychological, psych, psy, ps, nature, motor, learning, learn) VALUES ( ? , ? , ?, ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? )" , (schoolname, Standard, Name, Numbers, code, gender, DOB, age, immu, disease, Sick, Food, Meals, Junk, Water, breakfast, lunch, snacks, dinner, height, magnitude, Rate, Rates, norma, abnorma, tonsil, allergy, normal, abnormal, paediatric, answer, norm, abn, nor, af, answers, diet, nom, an, teeth, fill, filled, dent, den, ans, dental, prob, probs, Ye, nots, eye, eyes, remark, opthal, psychological, psych, psy, ps, nature, motor, learning, learn))
 			  
@@ -118,7 +118,7 @@ def addrec():
 
 @app.route('/list')
 def list():
-	con = sql.connect("db_file")
+	con = sql.connect("healthform.sql")
 	con.row_factory = sql.Row 
 
 	cur = con.cursor()
