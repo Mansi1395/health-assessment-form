@@ -1,6 +1,2 @@
-# Python
 env/
-__pycache__
-
-# Database
 database.db

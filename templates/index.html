@@ -48,6 +48,9 @@
 
        <p><h4>Age: <input type="text" name="age" /><h4><br><br></p>
 
+         <p><input type="submit" value="Next" /> <input type="reset" value="Reset" /><hr></p>
+
+
        <p><h2>Immunisation History<pr></p>
 
        <p><h4>Has your child taken the following vaccinations?<h4></p>
@@ -133,6 +136,7 @@
 
         <p><h4>Morning Breakfast: <h4></p>
         <p><h4><input type="checkbox" name="breakfast" value="Milk with sugar" />Milk with sugar<h4><br>
+           <h4><input type="checkbox" name="breakfast"value="Milk without sugar" />Milk without sugar<h4><br>
            <h4><input type="checkbox" name="breakfast" value="Milk without sugar" />Milk without sugar<h4><br>
            <h4><input type="checkbox" name="breakfast" value="Egg" />Egg<h4><br>
            <h4><input type="checkbox" name="breakfast" value="Omlette" />Omlette<h4><br>
@@ -526,55 +530,167 @@
         <p><h2>Systemic Examination<pr></p>
         
         <p><h4>Choose from the following alternatives: <h4></p>
-        <p><div class='row'>
-             <div class="col-lg-4 col-lg-offset-4">
-           <h4>Skin<h4><br>
-           <h4>Head<h4><br>
-           <h4>Ear<h4><br>
-           <h4>Nose<h4><br>
-           <h4>Hearing Test<h4><br>
-           <h4>Lymph Nodes<h4><br>
-           <h4>CVS<h4><br>
-           <h4>CNS<h4><br>
-           <h4>GIT<h4><br>
-           <h4>RS<h4><br>
-           <h4>General Signs<h4><br>
-            </div><br><br></p>
-
-         <p><div class="col-lg-4 col-lg-offset-4">
-           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
-           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br> 
-           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
-           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
-           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br> 
-           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
-           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
-           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
-           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
-           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
-           <h4><input type="checkbox" name="norma" value="Normal" />Normal<h4><br>
-            </div><br><br></p>
-        
-
-
-        <p><div class="col-lg-4 col-lg-offset-4">
-           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
-           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br> 
-           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
-           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
-           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br> 
-           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
-           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
-           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
-           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
-           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
-           <h4><input type="checkbox" name="abnorma" value="Abnormal" />Abnormal<h4><br>
-            </div><pr></p>
-
-
-
-        <div class="container">
-        <p><div class="text-left" href="#"></p>
+        <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Skin</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="skin", value="Normal" checked>Normal
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="skin", value="Abnormal" checked>Abnormal
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Head</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="head", value="Normal" checked>Normal
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="head", value="Abnormal" checked>Abnormal
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Ear</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="ear", value="Normal" checked>Normal
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="ear", value="Abnormal" checked>Abnormal
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Nose</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="nose", value="Normal" checked>Normal
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="nose", value="Abnormal" checked>Abnormal
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Hearing Test</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="hearing", value="Normal" checked>Normal
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="hearing", value="Abnormal" checked>Abnormal
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Lymph Nodes</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="lymph", value="Normal" checked>Normal
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="lymph", value="Abnormal" checked>Abnormal
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>CVS</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="CVS", value="Normal" checked>Normal
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="CVS", value="Abnormal" checked>Abnormal
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>CNS</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="CNS", value="Normal" checked>Normal
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="CNS", value="Abnormal" checked>Abnormal
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>GIT</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="GIT", value="Normal" checked>Normal
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="GIT", value="Abnormal" checked>Abnormal
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>General Signs</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="general", value="Normal" checked>Normal
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="general", value="Abnormal" checked>Abnormal
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+         
         <p>&nbsp;&nbsp;<h4>Tonsillitis (Tonsil Inflammation):<h4><br>
         <p>&nbsp;&nbsp;<input type="radio" name="tonsil" value="Present" />Present<br></p>
         <p>&nbsp;&nbsp;<input type="radio" name="tonsil" value="Absent" />Absent<h4><br><br></p>
@@ -591,33 +707,72 @@
         <input type="radio" name="times" value="2" />2<h4><br><br></p>
 
         <p><h4>Physiological issues: <h4></p>
-        <p><div class='row'>
-             <div class="col-lg-4 col-lg-offset-4">
-           <h4>Any breathing difficulty<h4><br>
-           <h4>Any speech difficulty<h4><br>
-           <h4>Bleeding from nose<h4><br>
-           <h4>Bleeding from cut more than expected<h4><br>
-            </div><br><br></p>
-
-         <p><div class="col-lg-4 col-lg-offset-4">
-           <h4><input type="radio" name="normal" value="Yes" />Yes<h4><br>
-           <h4><input type="radio" name="normal" value="Yes" />Yes<h4><br> 
-           <h4><input type="radio" name="normal" value="Yes" />Yes<h4><br>
-           <h4><input type="radio" name="normal" value="Yes" />Yes<h4><br>
-            </div><br><br></p>
-        
-
-
-        <p><div class="col-lg-4 col-lg-offset-4">
-           <h4><input type="radio" name="abnormal" value="No" />No<h4><br>
-           <h4><input type="radio" name="abnormal" value="No" />No<h4><br> 
-           <h4><input type="radio" name="abnormal" value="No" />No<h4><br>
-           <h4><input type="radio" name="abnormal" value="No" />No<h4><br>
-            </div><pr></p>
-
-
-        <div class="container">
-        <p><div class="text-left" href="#"></p>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Any breathing difficulty?</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="breathing", value="Yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="breathing", value="No" checked>No
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Any speech difficulty?</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="speech", value="Yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="speech", value="No" checked>No
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Bleeding from nose</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="bleed", value="Yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="bleed", value="No" checked>No
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Bleeding from cut more than expected</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="BT", value="Yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="BT", value="No" checked>No
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+                
+    
         <p><h4>Paediatrician's Remark: <h4></p>
         <p><h4><input type="checkbox" name="paediatric" value="ENT Issue" />ENT Issue<h4><br>
            <h4><input type="checkbox" name="paediatric" value="Chest Issue" />Chest Issue<h4><br>
@@ -634,68 +789,170 @@
         <p><h2>Dietary Assessment<pr></p>
 
          <p><h4>Choose from the following: <h4></p>
-        <p><div class='row'>
-             <div class="col-lg-4 col-lg-offset-4">
-           <h4>Carbohydrate intake<h4><br>
-           <h4>Mineral intake<h4><br>
-           <h4>Fat intake<h4><br>
-           <h4>Protein intake<h4><br>
-           <h4>Vitamin intake<h4><br>
-            </div><br><br></p>
+             <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Carbohydrate Intake</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="carbohydrates", value="Adequate" checked>Adequate
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="carbohydrates", value="Inadequate" checked>Inadequate
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
 
-         <p><div class="col-lg-4 col-lg-offset-4">
-           <h4><input type="radio" name="norm" value="Adequate" />Adequate<h4><br>
-           <h4><input type="radio" name="norm" value="Adequate" />Adequate<h4><br> 
-           <h4><input type="radio" name="norm" value="Adequate" />Adequate<h4><br>
-           <h4><input type="radio" name="norm" value="Adequate" />Adequate<h4><br>
-           <h4><input type="radio" name="norm" value="Adequate" />Adequate<h4><br>
-            </div><br><br></p>
-        
-
-
-        <p><div class="col-lg-4 col-lg-offset-4">
-           <h4><input type="radio" name="abn" value="Inadequate" />Inadequate<h4><br>
-           <h4><input type="radio" name="abn" value="Inadequate" />Inadequate<h4><br>
-           <h4><input type="radio" name="abn" value="Inadequate" />Inadequate<h4><br>
-           <h4><input type="radio" name="abn" value="Inadequate" />Inadequate<h4><br>
-           <h4><input type="radio" name="abn" value="Inadequate" />Inadequate<h4><br>
-            </div><pr></p>
-
-
-        <div class="container">
-        <p><div class="text-left" href="#"></p>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Mineral Intake</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="minerals", value="Adequate" checked>Adequate
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="minerals", value="Inadequate" checked>Inadequate
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Fat Intake</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="Fats", value="Adequate" checked>Adequate
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="Fats", value="Inadequate" checked>Inadequate
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Protein Intake</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="Protein", value="Adequate" checked>Adequate
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="Protein", value="Inadequate" checked>Inadequate
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+              <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Vitamin Intake</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="vitamins", value="Adequate" checked>Adequate
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="vitamins", value="Inadequate" checked>Inadequate
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
 
           <p><h4>Choose from the following: <h4></p>
-        <p><div class='row'>
-             <div class="col-lg-4 col-lg-offset-4">
-           <h4>Is the student undernourished?<h4><br>
-           <h4>Is the student overfed, but undernourished?<h4><br>
-           <h4>Is student obese?<h4><br>
-           <h4>Is fibre content in meal adequate?<h4><br>
-           <h4>Any other nutritional disorder?<h4><br>
-            </div><br><br></p>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Is the student undernourished?</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="undernourished", value="Yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="undernourished", value="No" checked>No
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Is the student overfed, but undernourished?</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="overfed", value="Yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="overfed", value="No" checked>No
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Is the student obese?</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="obese", value="Yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="obese", value="No" checked>No
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+             <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Is fibre content in meal adequate?</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="fibre", value="Yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="fibre", value="No" checked>No
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Any other nutritional disrder?</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="nutritional", value="Yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="nutritional", value="No" checked>No
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
 
-         <p><div class="col-lg-4 col-lg-offset-4">
-           <h4><input type="radio" name="nor" value="Yes" />Yes<h4><br>
-           <h4><input type="radio" name="nor" value="Yes" />Yes<h4><br> 
-           <h4><input type="radio" name="nor" value="Yes" />Yes<h4><br>
-           <h4><input type="radio" name="nor" value="Yes" />Yes<h4><br>
-           <h4><input type="radio" name="nor" value="Yes" />Yes<h4><br>
-            </div><br><br></p>
-        
-
-
-        <p><div class="col-lg-4 col-lg-offset-4">
-           <h4><input type="radio" name="af" value="No" />No<h4><br>
-           <h4><input type="radio" name="af" value="No" />No<h4><br>
-           <h4><input type="radio" name="af" value="No" />No<h4><br>
-           <h4><input type="radio" name="af" value="No" />No<h4><br>
-           <h4><input type="radio" name="af" value="No" />No<h4><br>
-            </div><pr></p>
-
-
-        <div class="container">
-        <p><div class="text-left" href="#"></p>
         <p><h4>Requires Further Diet Consulting:<h4><br>
         <input type="radio" name="answers" value="Yes" />Yes<br>
         <input type="radio" name="answers" value="No" />No<br>
@@ -711,31 +968,72 @@
 
         <p><h2>DENTAL HEALTH<pr></p>
            <p><h4>Oral habits: <h4></p>
-        <p><div class='row'>
-             <div class="col-lg-4 col-lg-offset-4">
-           <h4>Brushing twice<h4><br>
-           <h4>Use of mouthwash<h4><br>
-           <h4>Daily tongue cleansing<h4><br>
-           <h4>Brushing with toothpaste<h4><br>
-            </div><br><br></p>
+            <div class="container">
+            <table>
+            <tr>
+            <td style="padding-top: 5px; padding-right: 10px;">
+            <label>Brushing Twice</label>
+            </td>
+            <td>
+            <form>
+           <label class="radio-inline">
+           <input type="radio" name="brush_twice", value="yes", checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="brush_twice", value="no">No
+           </label>
+           </form>
+           </td>
+           </tr>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Use of mouthwash</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="mouthwash", value="yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="mouthwash", value="no">No
+           </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Daily Tongue Cleansing</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="tongue", value="yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="tongue", value="no">No
+           </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Brushing with toothpaste</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="toothpaste", value="yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="toothpaste", value="no">No
+           </label>
+           </form>
+           </td>
+           </tr>
+           </table>
+           </div>
 
-         <p><div class="col-lg-4 col-lg-offset-4">
-           <h4><input type="radio" name="nom" value="Yes" />Yes<h4><br>
-           <h4><input type="radio" name="nom" value="Yes" />Yes<h4><br> 
-           <h4><input type="radio" name="nom" value="Yes" />Yes<h4><br>
-           <h4><input type="radio" name="nom" value="Yes" />Yes<h4><br>
-            </div><br><br></p>
-        
-
-
-        <p><div class="col-lg-4 col-lg-offset-4">
-           <h4><input type="radio" name="an" value="No" />No<h4><br>
-           <h4><input type="radio" name="an" value="No" />No<h4><br>
-           <h4><input type="radio" name="an" value="No" />No<h4><br>
-           <h4><input type="radio" name="an" value="No" />No<h4><br>
-            </div><pr></p>
-
-
+      
         <div class="container">
         <p><div class="text-left" href="#"></p>
          <p><h4>Decayed teeth: <h4></p>
@@ -837,48 +1135,157 @@
            <h4><input type="checkbox" name="filled" value="85" />85<h4><br><br></p>
 
            <p><h4>Choose whether yes or no: <h4></p>
-        <p><div class='row'>
-             <div class="col-lg-4 col-lg-offset-4">
-           <h4>Fluorosis<h4><br>
-           <h4>Gingivitis<h4><br>
-           <h4>Malocclusion<h4><br>
-           <h4>Calculus<h4><br>
-           <h4>Stains<h4><br>
-           <h4>Coated Tongue<h4><br>
-           <h4>Bleeding gums<h4><br>
-           <h4>Swelling(Intra-oral/Extra-oral)<h4><br>
-           <h4>Tooth pain/Sensitivity<h4><br>
-           <h4>Temperomandibular Joint<h4><br>
-            </div><br><br></p>
-
-         <p><div class="col-lg-4 col-lg-offset-4">
-           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br>
-           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br> 
-           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br>
-           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br>
-           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br>
-           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br> 
-           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br>
-           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br>
-           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br> 
-           <h4><input type="radio" name="dent" value="Yes" />Yes<h4><br>
-            </div><br><br></p>
-        
-
-
-        <p><div class="col-lg-4 col-lg-offset-4">
-           <h4><input type="radio" name="den" value="No" />No<h4><br>
-           <h4><input type="radio" name="den" value="No" />No<h4><br>
-           <h4><input type="radio" name="den" value="No" />No<h4><br>
-           <h4><input type="radio" name="den" value="No" />No<h4><br>
-           <h4><input type="radio" name="den" value="No" />No<h4><br>
-           <h4><input type="radio" name="den" value="No" />No<h4><br>
-           <h4><input type="radio" name="den" value="No" />No<h4><br>
-           <h4><input type="radio" name="den" value="No" />No<h4><br>
-           <h4><input type="radio" name="den" value="No" />No<h4><br>
-           <h4><input type="radio" name="den" value="No" />No<h4><br>
-            </div><pr></p>
-
+             <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Fluorosis</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="fluorosis", value="yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="fluorosis", value="no">No
+           </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Gingivitis</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="gingivitis", value="yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="gingivitis", value="no">No
+           </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Malocclusion</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="malocclusion", value="yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="malocclusion", value="no">No
+           </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Calculus</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="calculus", value="yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="calculus", value="no">No
+           </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Stains</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="stains", value="yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="stains", value="no">No
+           </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Coated Tongue</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="coated", value="yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="coated", value="no">No
+           </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Bleeding gums</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="gums", value="yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="gums", value="no">No
+           </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Swelling (Intra-oral/Extra-oral)</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="swelling", value="yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="swelling", value="no">No
+           </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Sensitivity</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="sensitivity", value="yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="sensitivity", value="no">No
+           </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Temperomandibular Joint</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="TMJ", value="yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="TMJ", value="no">No
+           </label>
+           </form>
+           </td>
+           </tr>
+      
 
         <div class="container">
         <p><div class="text-left" href="#"></p>
@@ -990,42 +1397,103 @@
         <input type="radio" name="nature" value="Introvert" />Introvert<br><br></p>
 
         <p><h4>Psychological Assessment: <h4></p>
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>General Intelligence</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="intelligence", value="Average" checked>Average
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="intelligence", value="Above average" checked>Above average
+           </label>
+            </label>
+           <label class="radio-inline">
+           <input type="radio" name="intelligence", value="Below average" checked>Below average
+           </label>
+           </form>
+           </td>
+           </tr>
+            <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Non-verbal Intelligence</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="NV", value="Average" checked>Average
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="NV", value="Above average" checked>Above average
+           </label>
+            </label>
+           <label class="radio-inline">
+           <input type="radio" name="NV", value="Below average" checked>Below average
+           </label>
+           </form>
+           </td>
+           </tr>
+              <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Attention</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="attention, value="Average" checked>Average
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="attention", value="Above average" checked>Above average
+           </label>
+            </label>
+           <label class="radio-inline">
+           <input type="radio" name="attention", value="Below average" checked>Below average
+           </label>
+           </form>
+           </td>
+           </tr>
+              <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Memory & Learning</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="memory", value="Average" checked>Average
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="memory", value="Above average" checked>Above average
+           </label>
+            </label>
+           <label class="radio-inline">
+           <input type="radio" name="memory", value="Below average" checked>Below average
+           </label>
+           </form>
+           </td>
+           </tr>
+              <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Motor fuunctioning</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="motor", value="Average" checked>Average
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="motor", value="Above average" checked>Above average
+           </label>
+            </label>
+           <label class="radio-inline">
+           <input type="radio" name="motor", value="Below average" checked>Below average
+           </label>
+           </form>
+           </td>
+           </tr>
+
     
-        <p><div class='row'>
-             <div class="col-lg-3 col-lg-offset-3">
-           <h4>General Intelligence<h4><br>
-           <h4>Non - Verbal Intelligence<h4><br>
-           <h4>Attention<h4><br>
-           <h4>Memory & Learning<h4><br>
-           <h4>Motor Functioning<h4><br>
-            </div><br><br></p>
-
-         <p><div class="col-lg-3 col-lg-offset-3">
-           <h4><input type="radio" name="motor" value="Average" />Average<h4><br>
-           <h4><input type="radio" name="motor" value="Average" />Average<h4><br> 
-           <h4><input type="radio" name="motor" value="Average" />Average<h4><br>
-           <h4><input type="radio" name="motor" value="Average" />Average<h4><br>
-           <h4><input type="radio" name="motor" value="Average" />Average<h4><br>
-            </div><br><br></p>
-        
-
-
-        <p><div class="col-lg-3 col-lg-offset-3">
-           <h4><input type="radio" name="learning" value="Below Average" />Below Average<h4><br>
-           <h4><input type="radio" name="learning" value="Below Average" />Below Average<h4><br>
-           <h4><input type="radio" name="learning" value="Below Average" />Below Average<h4><br>
-           <h4><input type="radio" name="learning" value="Below Average" />Below Average<h4><br>
-           <h4><input type="radio" name="learning" value="Below Average" />Below Average<h4><br>
-            </div><pr></p>
-
-         <p><div class="col-lg-3 col-lg-offset-3">
-           <h4><input type="radio" name="learn" value="Above Average" />Above Average<h4><br>
-           <h4><input type="radio" name="learn" value="Above Average" />Above Average<h4><br>
-           <h4><input type="radio" name="learn" value="Above Average" />Above Average<h4><br>
-           <h4><input type="radio" name="learn" value="Above Average" />Above Average<h4><br>
-           <h4><input type="radio" name="learn" value="Above Average" />Above Average<h4><br>
-            </div><pr></p>
-
 
         <div class="container">
         <p><div class="text-left" href="#"></p>
