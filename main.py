@@ -132,11 +132,11 @@ def index():
 		mouthwash = request.form.get('mouthwash')
 		tongue = request.form.get('tongue')
 		toothpaste = request.form.get('toothpaste')
-		teeth = request.form.get('teeth')
+		teeth = request.form.getlist('teeth')
 		teeth = ','.join(teeth)
-		fill = request.form.get('fill')
+		fill = request.form.getlist('fill')
 		fill = ','.join(fill)
-		filled = request.form.get('filled')
+		filled = request.form.getlist('filled')
 		filled = ','.join(filled)
 		fluorosis = request.form.get('fluorosis')
 		gingivitis = request.form.get('gingivitis')
@@ -213,6 +213,7 @@ def index():
 								probs, ye, nots, eye, eyes, remark, opthal,
 								psychological, psych, psy, ps, nature,
 								intelligence, NV, attention, memory, motor))
+			
 			print("Inserted successfully")
 			conn.commit()
 		except:
