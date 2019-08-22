@@ -1,2 +1,7 @@
+# Python
 env/
+*.pyc
+__pycache__
+
+# SQLite3
 database.db
