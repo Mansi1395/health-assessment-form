@@ -103,7 +103,7 @@ def index():
 		general = request.form.get('general')
 		tonsil = request.form.get('tonsil')
 		allergy = request.form.get('allergy')
-		times = request.form.get('times')
+		screen = request.form.get('screen')
 		breathing = request.form.get('breathing')
 		speech = request.form.get('speech')
 		bleed = request.form.get('bleed')
@@ -162,7 +162,7 @@ def index():
 		conn = get_db()
 		cur = conn.cursor()
 		try:
-			cur.execute("INSERT INTO students(schoolname, standard, name, numbers, code, gender, dob, age, immu, disease, sick, food, meals, junk, water, breakfast, lunch, snacks, dinner, height, magnitude, rate, rates, norma, abnorma, tonsil, allergy, normal, abnormal, paediatric, answer, norm, abn, nor, af, answers, diet, nom, an, teeth, fill, filled, dent, den, ans, dental, prob, probs, ye, nots, eye, eyes, remark, opthal, psychological, psych, psy, ps, nature, motor, learning, learn) VALUES ( ? , ? , ?, ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? )", (schoolname, standard, name, numbers, code, gender, dob, age, immu, disease, sick, food, meals, junk, water, breakfast, lunch, snacks, dinner, height, magnitude, rate, rates, norma, abnorma, tonsil, allergy, normal, abnormal, paediatric, answer, norm, abn, nor, af, answers, diet, nom, an, teeth, fill, filled, dent, den, ans, dental, prob, probs, ye, nots, eye, eyes, remark, opthal, psychological, psych, psy, ps, nature, motor, learning, learn))
+			cur.execute("INSERT INTO students((schoolname, standard, name, numbers, code, gender, DOB, age, immu, disease, sick, food, meals, junk, water, breakfast, lunch, snacks, dinner, height, magnitude, Rate, Rates, skin, head, ear, nose, hearing, lymph, CVS, CNS, GIT, general, tonsil, allergy, screen, breathing, speech, bleed, BT, paediatric, carbohydrates, minerals, Fats, Protein, vitamins, undernourishhed, overfed, obese, fibre, nutritional, answers, diet, brush_twice, mouthwash, tongue, toothpaste, teeth, fill, filled, fluorosis,gingivitis, malocclusion, calculus, stains, coated, gums, swelling, sensitivity, TMJ, ans, dental, prob, probs, ye, nots, eye, eyes, remark, opthal, psychological, psych, psy, ps, nature, intelligence, NV, attention, memory, motor) VALUES ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ?, ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ?, ?, ?)", (schoolname, standard, name, numbers, code, gender, DOB, age, immu, disease, sick, food, meals, junk, water, breakfast, lunch, snacks, dinner, height, magnitude, Rate, Rates, skin, head, ear, nose, hearing, lymph, CVS, CNS, GIT, general, tonsil, allergy, screen, breathing, speech, bleed, BT, paediatric, carbohydrates, minerals, Fats, Protein, vitamins, undernourishhed, overfed, obese, fibre, nutritional, answers, diet, brush_twice, mouthwash, tongue, toothpaste, teeth, fill, filled, fluorosis,gingivitis, malocclusion, calculus, stains, coated, gums, swelling, sensitivity, TMJ, ans, dental, prob, probs, ye, nots, eye, eyes, remark, opthal, psychological, psych, psy, ps, nature, intelligence, NV, attention, memory, motor))
 			print("Inserted successfully")
 			conn.commit()
 		except:
