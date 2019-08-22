@@ -38,9 +38,9 @@ def close_connection(exception):
 		db.close()
 
 
-@app.route('/')
-def index():
-	return render_template('index.html')
+#@app.route('/')
+#def index():
+	#return render_template('index.html')
 
 
 @app.route('/send', methods=['GET', 'POST'])
@@ -64,8 +64,8 @@ def new_student():
 	return render_template('index.html')
 
 
-@app.route('/addrec', methods=['POST', 'GET'])
-def addrec():
+@app.route('/index', methods=['POST', 'GET'])
+def index():
 
 	if request.method == 'POST':
 		schoolname = request.form.get('schoolname')
