@@ -128,6 +128,7 @@ def index():
 		nutritional = request.form.get('nutritional')
 		answers = request.form.get('answers')
 		diet = request.form.getlist('diet')
+		diet = ','.join(diet)
 		brush_twice = request.form.get('brush_twice')
 		mouthwash = request.form.get('mouthwash')
 		tongue = request.form.get('tongue')
@@ -150,6 +151,7 @@ def index():
 		TMJ = request.form.get('TMJ')
 		ans = request.form.get('ans')
 		dental = request.form.getlist('dental')
+		dental = ','.join(dental)
 		prob = request.form.get('prob')
 		probs = request.form.get('probs')
 		ye = request.form.get('ye')
@@ -213,7 +215,7 @@ def index():
 								probs, ye, nots, eye, eyes, remark, opthal,
 								psychological, psych, psy, ps, nature,
 								intelligence, NV, attention, memory, motor))
-			
+
 			print("Inserted successfully")
 			conn.commit()
 		except:
