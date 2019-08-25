@@ -48,7 +48,6 @@
 
        <p><h4>Age: <input type="text" name="age" /><h4><br><br></p>
 
-         <p><input type="submit" value="Next" /> <input type="reset" value="Reset" /><hr></p>
 
 
        <p><h2>Immunisation History<pr></p>
@@ -691,16 +690,28 @@
            </td>
            </tr>
          
+        
+        
+        <p><h4>Tonsillitis (Tonsil Inflammation):<h4><br>
+        <p><input type="radio" name="tonsil" value="Present" />Present<br></p>
+        <p><input type="radio" name="tonsil" value="Absent" />Absent<h4><br><br></p>
+  
 
-        <p>&nbsp;&nbsp;<h4>Tonsillitis (Tonsil Inflammation):<h4><br>
-        <p>&nbsp;&nbsp;<input type="radio" name="tonsil" value="Present" />Present<br></p>
-        <p>&nbsp;&nbsp;<input type="radio" name="tonsil" value="Absent" />Absent<h4><br><br></p>
-        </div>
 
+        <h4>Allergy<h4><br>
+        <p><div class="col-lg-4 col-lg-offset-4">
+        <input type="radio" name="allergy" value="Yes" />Yes<br>
+        <input type="radio" name="allergy" value="No" />No<h4><br><br></p>
+        
+
+        <p><h4>Time Spent On Screen(in hours):<h4><br>
+        <input type="radio" name="screen" value="1" />1<br>
+        <input type="radio" name="screen" value="2" />2<h4><br><br></p>
+    
         
         <p><h4>Allergy:<h4><br>
-        <input type="radio" name="allergy" value="Yes" />Present<br>
-        <input type="radio" name="allergy" value="No" />Absent<h4><br><br></p>
+        <input type="radio" name="allergy" value="Yes" />Yes<br>
+        <input type="radio" name="allergy" value="No" />No<h4><br><br></p>
 
     
         <p><h4>Time Spent On Screen(in hours):<h4><br>
@@ -708,6 +719,7 @@
         <input type="radio" name="screen" value="2" />2<h4><br><br></p>
 
         <p><h4>Physiological issues: <h4></p>
+
            <tr>
            <td style="padding-top: 5px; padding-right: 10px;">
            <label>Any breathing difficulty?</label>
@@ -1320,30 +1332,38 @@
         <input type="radio" name="probs" value="No" />No<br><br></div><pr></p>
 
             <p><h4>&nbsp;&nbsp;Colour Vision: <h4></p>
-        <p><div class='row'>
-             <div class="col-lg-4 col-lg-offset-4">
-           <h4>&nbsp;&nbsp;Left colour perception<h4><br>
-           <h4>&nbsp;&nbsp;Right colour perception<h4><br>
-            </div><br><br></p>
-
-         <p><div class="col-lg-4 col-lg-offset-4">
-           <h4><input type="radio" name="Ye" value="Yes" />Yes<h4><br>
-           <h4><input type="radio" name="Ye" value="Yes" />Yes<h4><br> 
-            </div><br><br></p>
         
-
-
-        <p><div class="col-lg-4 col-lg-offset-4">
-           <h4><input type="radio" name="nots" value="No" />No<h4><br>
-           <h4><input type="radio" name="nots" value="No" />No<h4><br>
-            </div><pr></p>
-        
-        <div class="container">
-        <p><div class="text-left" href="#"></p>
-         
-         <div class="container">
-        <p><div class="text-left" href="#"></p>
-
+           <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Left colour perception</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="Ye", value="Yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="Ye", value="No" checked>No
+           </label>
+            </label>
+           </form>
+           </td>
+           </tr>
+             <tr>
+           <td style="padding-top: 5px; padding-right: 10px;">
+           <label>Right Colour Perception</label>
+           </td>
+           <td>
+           <form>
+           <label class="radio-inline">
+           <input type="radio" name="nots", value="Yes" checked>Yes
+           </label>
+           <label class="radio-inline">
+           <input type="radio" name="nots", value="No">No
+           </label>
+           </form>
+           </td>
+           </tr>
         
         <p><h4>Left Eye Vision Acuity: <h4></p>
         <p><h4><input type="checkbox" name="eye" value="6" />6<h4><br>
